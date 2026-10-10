@@ -1,0 +1,206 @@
+{
+  "style": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade",
+  "palette": [
+    "#101525",
+    "#0A0E1A",
+    "#141A2E",
+    "#2EC5E5",
+    "#F0C448",
+    "#F0445A",
+    "#7254D3",
+    "#F4F1E8"
+  ],
+  "notes": "One art style for the whole project, repeated word for word at the head of every prompt (rule F.1c). Every mechanical sprite declares its orientation in words (rule C.8); the symmetric ones say so explicitly so nothing is mirrored by accident - only sprite_arrow_dial and sprite_icon_back are asymmetric. Sprites are drawn on whatever backdrop the model likes because the pipeline cuts the background away (rule F.1b), so no prompt argues about background colour. sprite_ledge_plate, sprite_anchor_ring, sprite_shutter_panel, sprite_shaft_back, sprite_shaft_ring and sprite_shaft_wall carry a nine-slice border in their .meta, so their prompts ask for uniform end caps and a plain centre that survives stretching. There is no audio in this game, so the manifest declares none. No prompt contains the app name and no sprite carries lettering of any kind (hard rule 1).",
+  "assets": [
+    {
+      "name": "bg_main",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_main.png",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, a vertical industrial shaft seen from the bottom looking straight up, concentric neon ring ribs marching away into the distance and shrinking towards a single distant lamp high in the upper third, deep blue-black walls, electric cyan rim light along every rib, a faint gold halo around the far lamp, the middle band of the frame deliberately dark and low contrast as a safe area for a mark and a button, corners vignetted, vertical 9:19.5 portrait composition, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_game.png",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, the same vertical shaft corridor running the full height of the frame, much lower contrast, a quiet rhythm of dim neon ring ribs down both walls, almost black centre so gameplay pieces read on top of it, the upper quarter lightening towards a distant gold glow, the top and the bottom sixth darkened so a HUD stays legible, no bright highlights in the middle, vertical 9:19.5 portrait composition, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_core",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_core.png",
+      "facing": "radially symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single faceted glowing energy core sphere, cyan inner light bleeding through cut glass facets, a thin bright rim, compact and perfectly round in silhouette, centred, whole object in frame, nothing else in the picture, radially symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_arrow_dial",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_arrow_dial.png",
+      "facing": "side view, tip facing RIGHT",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single thick wedge-shaped aiming arrow pointing to the RIGHT, blunt tail, sharp tip, cyan neon edge over dark metal, flat and graphic, centred, whole object in frame, side view, tip facing RIGHT, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_ledge_plate",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_ledge_plate.png",
+      "facing": "horizontally symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single narrow horizontal metal ledge plate with a bright cyan leading edge, a uniform ribbed rim running left and right so the plate can be stretched sideways, a flat plain centre, seen straight on, centred, whole object in frame, horizontally symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_anchor_ring",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_anchor_ring.png",
+      "facing": "horizontally symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single horizontal anchor platform with a heavy gold locking ring clamped through its middle, uniform rim at the left and right ends so it can be stretched sideways, flat plain centre, seen straight on, centred, whole object in frame, horizontally symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_shutter_panel",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_shutter_panel.png",
+      "facing": "horizontally symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single horizontal crimson armour shutter panel with diagonal hazard hatching, heavy bolted caps at the left and right ends and a plain hatched centre so it stretches sideways, seen straight on, centred, whole object in frame, horizontally symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_fan_blade",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_fan_blade.png",
+      "facing": "top-down, radially symmetric",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single three-bladed shaft fan seen face on, violet brushed metal blades around a small hub, perfectly rotationally symmetric so it can spin, centred, whole object in frame, top-down, radially symmetric, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_beacon_lamp",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_beacon_lamp.png",
+      "facing": "front view, lamp UP",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single golden beacon lamp head with a faceted lens and short light shafts spreading UPWARD from it, warm gold glow, dark housing below the lens, centred, whole object in frame, front view, lamp UP, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_brake_ring",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_brake_ring.png",
+      "facing": "radially symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single thin cyan energy ring, a clean open circle of light with a soft inner glow and nothing in the middle, centred, whole object in frame, radially symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_spark",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_spark.png",
+      "facing": "radially symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single small four-pointed cyan spark, sharp thin points, bright core, centred, whole object in frame, radially symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_charge_pip",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_charge_pip.png",
+      "facing": "radially symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single small hexagonal energy pip, bright cyan core inside a dark bevelled hexagon rim, centred, whole object in frame, radially symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_mark_emblem",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_mark_emblem.png",
+      "facing": "radially symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single abstract emblem: a hexagonal beacon lens with three light shafts radiating from it and a chevron pointing UP inscribed in the middle, cyan and gold on dark metal, a clean graphic mark with absolutely no lettering of any kind, centred, whole object in frame, radially symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_alt_badge",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_alt_badge.png",
+      "facing": "radially symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single small hexagonal badge with a cyan chevron pointing UP inside it, dark bevelled rim, flat graphic, centred, whole object in frame, radially symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_lock_badge",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_lock_badge.png",
+      "facing": "vertically symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single closed padlock, violet brushed metal body and a thick shackle, flat graphic, centred, whole object in frame, vertically symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_shaft_back",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_shaft_back.png",
+      "facing": "symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single rectangular back plate of a shaft wall, evenly ribbed dark blue metal with a uniform border frame on all four sides and a flat repeating centre so the plate can be stretched in both directions, seen straight on, fills the frame, symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_shaft_ring",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_shaft_ring.png",
+      "facing": "horizontally symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single horizontal structural rib band of a shaft, a flat dark beam with a dim violet light strip along it, uniform caps at the left and right ends and a plain centre so it can be stretched sideways, seen straight on, centred, whole object in frame, horizontally symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_shaft_wall",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_shaft_wall.png",
+      "facing": "vertically symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single tall narrow vertical wall panel of a shaft, dark blue plating with a thin cyan light seam running its height, uniform caps at the top and bottom ends and a plain centre so it can be stretched vertically, seen straight on, centred, whole object in frame, vertically symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_pause",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_pause.png",
+      "facing": "symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single pause glyph: two thick rounded vertical bars side by side, bright cyan on nothing else, centred, whole object in frame, symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_back",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_back.png",
+      "facing": "side view, facing LEFT",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single thick rounded return arrow pointing to the LEFT, bright cyan, chunky and simple, centred, whole object in frame, side view, facing LEFT, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_close",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_close.png",
+      "facing": "symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single close glyph: a thick rounded diagonal cross, bright cream, chunky and simple, centred, whole object in frame, symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_tut_aim",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_tut_aim.png",
+      "facing": "symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single compact instructional vignette: a glowing cyan core sphere resting on a narrow metal ledge with a wedge aiming arrow tilted above it and a simple finger silhouette touching the air beside it, read as one small badge, centred, whole object in frame, symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_tut_brake",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_tut_brake.png",
+      "facing": "symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single compact instructional vignette: a glowing cyan core sphere mid arc with a dotted curve behind it and an open cyan energy ring flaring around the sphere, read as one small badge, centred, whole object in frame, symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_tut_goal",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_tut_goal.png",
+      "facing": "symmetric, no facing",
+      "prompt": "bold cel-shaded toon, thick dark outlines, flat neon rim light, high-contrast vertical arcade, one single compact instructional vignette: a golden beacon lamp above and three small hexagonal energy pips in a row below it, read as one small badge, centred, whole object in frame, symmetric, no facing, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    }
+  ]
+}

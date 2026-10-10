@@ -1,0 +1,13 @@
+{
+  "notes": "tapFrac is the SCREEN centre of the real rect. The UI lives under AspecterSA (AspectRatioFitter, 1242x2688 = 0.46205) inside a 1080x2400 screen (0.45), so a panel fraction u from the bottom lands at 0.013039 + u*0.973917 of the screen: tapFracY = 0.986961 - 0.973917*u. The JUMP tap is a world/HUD tap zone and needs no correction - it only has to miss the top buttons (y<0.10) and the control hint band (y>0.91).",
+  "steps": [
+    { "wait": 3, "waitLoader": true, "shot": "01_Menu" },
+    { "tapFrac": [0.500, 0.851], "label": "HOW_TO_PLAY", "wait": 2.0, "shot": "02_HowToPlay" },
+    { "tapFrac": [0.500, 0.807], "label": "HOWTO_GOT_IT", "wait": 1.4 },
+    { "tapFrac": [0.500, 0.780], "label": "SECTORS", "wait": 1.8, "shot": "03_Sectors" },
+    { "tapFrac": [0.500, 0.872], "label": "LAUNCH", "waitLoader": true, "shot": "04_Game_aim" },
+    { "tapFrac": [0.500, 0.520], "label": "JUMP", "wait": 0.7, "shot": "05_Game_flight" },
+    { "tapFrac": [0.500, 0.520], "label": "JUMP_AGAIN", "wait": 2.6, "shot": "06_Game_climb" },
+    { "tapFrac": [0.878, 0.069], "label": "PAUSE", "wait": 1.8, "shot": "07_PausePop" }
+  ]
+}
